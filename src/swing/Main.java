@@ -15,7 +15,7 @@ import java.util.Iterator;
  * La clase Main gestiona la interfaz gráfica y la lógica del juego.
  */
 public class Main {
-    private JPanel panelMain;
+    public JPanel panelMain;
     private JPanel panelPrincipal;
     private JLabel imagenPrincipal;
     private JLabel imagenTitulo;
@@ -68,6 +68,7 @@ public class Main {
      * Inicializa todos los paneles y componentes de la interfaz gráfica.
      */
     public Main(){
+        panelMain = new JPanel();
         crearPanelMain();
         crearPanelPrincipal();
         crearLabelImagenPrincipal();
